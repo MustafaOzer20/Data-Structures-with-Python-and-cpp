@@ -87,12 +87,6 @@ class BinarySearchTree:
                 self.deletion(data)
                 temp.key = data
 
-            else:
-                predecessor = self.__predecessor(temp)
-                data = predecessor.key
-                self.deletion(data)
-                temp.key = data
-
     def __successor(self, node):
         temp = node
         temp = temp.right
